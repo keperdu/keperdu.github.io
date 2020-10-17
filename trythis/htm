@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!-- https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_internal -->
+<style>
+body {background-color: lightgrey;}
+h1   {color: blue;}
+h3   {color: black;}
+p    {color: black;}
+</style>
+</head>
+<!--https://www.w3schools.com/html/tryit.asp?filename=tryhtml_paragraphs1 -->
+<h2>MEET KEDIE </h2/>
+<p><img src="images/HerMother.jpg" alt="mother and daughter" width= "400" Height ="300"></p>
+<p>"Born on January 1st 19cough cough Kedie became the first female president of that fake country.
+so who is kedie? lets find out.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut 
+odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat 
+voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit 
+laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit 
+qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum 
+fugiat quo voluptas nulla pariatur?".</p>
+
+<!-- https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_float-->
+<h3>EDUCATION...</h3>
+<p><strong>Float the image to the right:</strong></p><P><mg src="images/HerSchool.jpg" alt="ariel view of school" Width="476" Height="281"></p>
+"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut 
+odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat 
+voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit 
+laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit 
+qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum 
+fugiat quo voluptas nulla pariatur?".</p> 
+
+
+<h3>....AND ROOTS, IF YOU MAY, </h3>
+<p><strong>Float the image to the left:</strong></p><p><img src="images/HerMother.jpg" alt="Canada_Botswana_Locator.png" width= "685" Height ="300"></p>
+<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut 
+odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat 
+voluptatem.<i>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit 
+laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit 
+qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum 
+fugiat quo voluptas nulla pariatur</i></p>
+
+<p><img src="images/theboy.jpg" alt="boys walks away" width= "276" Height= "183"></p>
+<h3>ABOUT BOTSWANA... </h3/>
+<p><img src="images/BW-Molepolole.png" alt="map of botswana" width= "410" Height = "400"></p>
+ <!--https://www.w3schools.com/css/tryit.asp?filename=trycss3_column-rule-style -->
+<style>.newspaper {column-count: 4; column-gap: 50px;}</style>
+<div class="newspaper">
+Colonised in 1889, the southern african country got its independence in 1996 and 
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut 
+odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat 
+voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit 
+laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit 
+qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum 
+fugiat quo voluptas nulla pariatur. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut 
+odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat 
+voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit 
+laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit 
+qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum 
+fugiat quo voluptas nulla pariatur
+</div>
+
+<div style="background-color:tomato;color:black;padding:20px;">
+  <h2>Contact</h2>
+  <p>123 Something Ave<br>
+     Suite 2014<br>
+     That Other City, This Province<br>
+	 X4X 5X6.<br>
+	 person@email.zy<br>
+	 web: www.dontgothere.zy</p</div> 
+
+<p>Now that you know all about Kedie the person, lets take a look at Kedie the President.
+Read more about her policies here <p><a href="keperdu.github.io/mary.htm/">mary</a></p>
+
+<html>
+<body>
