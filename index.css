@@ -1,7 +1,7 @@
 <!-- https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_external -->
 
 
-body {background-color: lightgrey font-family: Arial, Helvetica, sans-serif}
+body {background-color: lightgrey; font-family: Arial, Helvetica, sans-serif}
 h1   {color: blue;text-align: center; font-family: "Lucida Console", Courier, monospace;font-size: 50px}
 h3   {color: black;}
 p    {color: black; font-size: 15px}
