@@ -8,6 +8,6 @@ p    {color: black; font-size: 15px}
 .sansserif {font-family: Arial, Helvetica, sans-serif;}
 .center {text-align: center;}
 .newspaper {column-count: 4; column-gap: 50px;}
-.contact {"background-color:tomato;color:black;padding:20px;"}
-.img {"float: right; margin right: 100px; margin bottom: 5px; border: solid black 1px; padding 3px"}
-.img2 {"Float: left: margin left: px; margin bottom: 5px; border: solid black 1px; padding 3px"}
+.contact {background-color:tomato;color:black;padding:20px;}
+.img {float: right; margin right: 100px; margin bottom: 5px; border: solid black 1px; padding 3px}
+
