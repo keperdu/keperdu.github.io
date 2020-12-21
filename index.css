@@ -1,13 +1,70 @@
-<!-- https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_external -->
+/*Sources:https://www.youtube.com/watch?v=oLgtucwjVII
+Sources:Duckett, Jon. HTML and CSS: Design and Build Websites. Wiley &amp; Sons, 2011.*/  
+body { 
+  background: grey;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:black;
+}
+li {
+    float: left;
+  }  
+   
+li a {
+    display: block;
+    color:white;
+    text-align: center;
+    padding:12px 16px;
+    text-decoration: none;
+  }
+
+li a:hover {
+    background-color: black;
+  }
+  
+
+table, td, th {
+  border: 1px solid black;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  Overflow: Hidden;
+}
+
+.image {
+  float: right;
+}
+.wrap1 {
+  padding-right: 24%;
+}
+
+.imgk2 {
+  float: right;
+  width: 25% ;
+}
+.wrap2 {
+  padding-left: 54%;
+}
+.newspaper {
+  column-count: 2;
+}
 
 
-body {background-color: lightgrey; font-family: Arial, Helvetica, sans-serif}
-h1   {color: blue;text-align: center; font-family: "Lucida Console", Courier, monospace;font-size: 50px}
-h3   {color: black;}
-p    {color: black; font-size: 15px}
-.sansserif {font-family: Arial, Helvetica, sans-serif;}
-.center {text-align: center;}
-.newspaper {column-count: 4; column-gap: 50px;}
-.contact {background-color:tomato;color:black;padding:20px;}
-.img {float: right; margin right: 100px; margin bottom: 5px; border: solid black 1px; padding 3px}
+.footer {
+	background-color: black;	
+    padding: 10px; 
+    color: white;
+    text-align: center;
+    margin-top: 90px;
+ }
+ 
 
+  
