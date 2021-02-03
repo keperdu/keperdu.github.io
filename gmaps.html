@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Map</title>
+    <script
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5a1FoKmbmQ1djPh6pRx7oiknBf3ACNOE&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <style type="text/css">
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;
+        /* The height is 400 pixels */
+        width: 100%;
+        /* The width is the width of the web page */
+      }
+    </style>
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of University of Botswana (Gaborone)
+        const Gaborone = { lat: -24.660, lng: 25.930 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 6,
+          center: Gaborone,
+        });
+        // The marker, positioned at  University of Botswana (Gaborone)
+        const marker = new google.maps.Marker({
+          position: Gaborone,
+          map: map,
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <h3>My Last Degree Was Done At... </h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+  </body>
+</html>
