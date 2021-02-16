@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>ArcGIS API for JavaScript Tutorials: Add a point, line, and polygon</title>
+  <title>ArcGIS API for JavaScript Tutorials: Point, line, & polygon</title>
   <style>
     html, body, #viewDiv {
       padding: 0;
@@ -26,7 +26,7 @@
 
     ], function(esriConfig,Map, MapView, Graphic, GraphicsLayer) {
 
-  esriConfig.apiKey = "YOUR-API-KEY";
+  esriConfig.apiKey = "AAPKe80e31acc1a548b1b7c3da1fa8fe5551-MeWT3mWybhfqHnR7o3OV5m8ESw_TZ6Ab6BVZSC3dD0rxthggj6wtx_rPrIt9Dvc";
 
   const map = new Map({
     basemap: "arcgis-topographic" //Basemap layer service
@@ -34,7 +34,7 @@
 
   const view = new MapView({
     map: map,
-    center: [32.96310,34.60113], //Longitude, latitude
+    center: [-79.79580,43.74031], //Longitude, latitude
     zoom: 13,
     container: "viewDiv"
  });
@@ -42,88 +42,44 @@
  const graphicsLayer = new GraphicsLayer();
  map.add(graphicsLayer);
 
- const point = { //Create a point
-    type: "point",
-    longitude: 32.99606323242187,
-    latitude: 34.63589150781387
- };
- const simpleMarkerSymbol = {
-    type: "simple-marker",
-    color: [226, 119, 40],  // red
-    outline: {
-        color: [255, 255, 255], // White
-        width: 1
-    }
- };
+ 
 
- const pointGraphic = new Graphic({
-    geometry: point,
-    symbol: simpleMarkerSymbol
- });
- graphicsLayer.add(pointGraphic);
-
-    // Create a line geometry
- const polyline = {
-    type: "polyline",
-    paths: [
-        [33.01116943359375,34.64125844020925], //Longitude, latitude
-        [33.006019592285156,34.62685167877424], //Longitude, latitude
-        [33.00516128540039,34.6134313663591], //Longitude, latitude
-        [33.00636291503906,34.60255225779189],   //Longitude, latitude
-        [33.008766174316406,34.59365010878254]  //Longitude, latitude
-        
-    ]
- };
- const simpleLineSymbol = {
-    type: "simple-line",
-    color: [226, 119, 40], // Orange
-    width: 2
- };
-
- const polylineGraphic = new Graphic({
-    geometry: polyline,
-    symbol: simpleLineSymbol
- });
- graphicsLayer.add(polylineGraphic);
 
  // Create a polygon geometry
  const polygon = {
     type: "polygon",
     rings: [
-      [32.9838752746582,34.638716252367594],//Longitude, latitude
-      [32.9780387878418,34.63560902806727], //Longitude, latitude
-      [32.96284675598144,34.62324959746779], //Longitude, latitude
-      [32.955636978149414,34.62014179383325], //Longitude, latitude
-      [32.95426368713379,34.620706857696135], //Longitude, latitude
-      [32.95220375061035,34.619788626965196], //Longitude, latitude
-      [32.950143814086914,34.61710450965532], //Longitude, latitude
-      [32.94756889343262,34.61661005752521], //Longitude, latitude
-      [32.95228958129883,34.609616776288505], //Longitude, latitude
-      [32.954349517822266,34.610605760914666], //Longitude, latitude
-      [32.96078681945801,34.60778005929919], //Longitude, latitude
-      [32.96765327453613,34.60862777988157], //Longitude, latitude
-      [32.97039985656738,34.60770941552663], //Longitude, latitude
-      [32.97057151794433,34.60516619968573], //Longitude, latitude
-      [32.97228813171387,34.60509555368936], //Longitude, latitude
-      [32.974691390991204,34.60354132656319], //Longitude, latitude
-      [32.97992706298828,34.60424779704483], //Longitude, latitude
-      [32.984819412231445,34.611947935492324], //Longitude, latitude
-      [32.98550605773926,34.61491477071779], //Longitude, latitude
-      [32.987565994262695,34.619576726123015], //Longitude, latitude
-      [32.98945426940918,34.6228964438252], //Longitude, latitude
-      [32.98876762390137,34.6241677899049], //Longitude, latitude
-      [32.988853454589844,34.630029855950774], //Longitude, latitude
-      [32.98576354980469,34.63836316455961], //Longitude, latitude
-      [32.9838752746582,34.638716252367594] //Longitude, latitude  
-    ]
+      [-79.79421615600586,43.73919704889058],//Longitude, latitude
+      [-79.79310035705566,43.738980005846436],//Longitude, latitude
+      [-79.79207038879395,43.73913503667252],//Longitude, latitude
+      [-79.79159832000732,43.73981716753861],//Longitude, latitude
+      [-79.79207038879395,43.74043727976403],//Longitude, latitude
+      [-79.79292869567871,43.74102638042921],//Longitude, latitude
+      [-79.79382991790771,43.741398441020685],//Longitude, latitude
+      [-79.79490280151367,43.741956527572626],//Longitude, latitude
+      [-79.79588985443115,43.742545613289145],//Longitude, latitude
+      [-79.79653358459473,43.74322770529827],//Longitude, latitude
+      [-79.79739189147949,43.743506740698486],//Longitude, latitude
+      [-79.79812145233154,43.7430416809756],//Longitude, latitude
+      [-79.79786396026611,43.74235958684699],//Longitude, latitude
+      [-79.79756355285643,43.74102638042921],//Longitude, latitude
+      [-79.79777812957764,43.73938308515935],//Longitude, latitude
+      [-79.79743480682373,43.738700949347866],//Longitude, latitude
+      [-79.79649066925049,43.73817383907989],//Longitude, latitude
+      [-79.79558944702147,43.737801758449834],//Longitude, latitude
+      [-79.79507446289062,43.73817383907989],//Longitude, latitude
+      [-79.79421615600586,43.73919704889058],//Longitude, latitude
+
+      ]
+ 
  };
 
  const simpleFillSymbol = {
     type: "simple-fill",
-    color: [227, 139, 79, 0.8],  // Orange, opacity 80%
+    color: [255, 99, 71],  // red, 
     outline: {
-        color: [255, 255, 255],
-        width: 1
+        color: [255, 99, 71],
+        width: 2
     }
  };
 
