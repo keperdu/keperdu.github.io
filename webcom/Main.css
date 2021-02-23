@@ -215,10 +215,9 @@ p.wrap{
 
 
 .footer {
-    background-color: #777;
     padding: 10px;
     text-align: center;
-    color: white;
+    color: #0c0c0c;
     margin-top: 1px;
     background-color: gray; 
     bottom: 0;
