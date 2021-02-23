@@ -4,6 +4,10 @@ body {
   padding-top: 50px;
 }
 
+.faq {
+	background-color: white;
+}
+
 /*************Main page set up*******/  
 .main { 
   background-image: url("mountains.jpg");
