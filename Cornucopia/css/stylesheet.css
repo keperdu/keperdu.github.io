@@ -1,0 +1,157 @@
+/* General CSS colour design ideas inspired by examples from https://visme.co/blog/website-color-schemes/ */
+* {
+	box-sizing: border-box;
+}
+
+/* Taken from https://www.w3schools.com/css/css_rwd_grid.asp to ensure the columns for responsive design work properly */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Combined from https://www.w3schools.com/css/css_rwd_grid.asp and https://www.w3schools.com/css/css_rwd_mediaqueries.asp  */
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+  width: 100%;
+}
+
+/* Method for sticky footer taken from Mozilla's guide: https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Sticky_footers */
+body {
+	font-family: 'Trebuchet MS', sans-serif;
+	color: #393b39;
+	margin: 0px;
+}
+
+#pagetop {
+	background-color: #3C81C6;
+	padding: 0px;
+}
+
+#pagetop div {
+	padding: 0px;
+}
+
+#logo {
+	display: block;
+	height: 100px;
+	width: 100px;
+	padding: 0px;
+	margin-left: calc(50vw - 50px);
+	margin-right: calc(50vw - 50px);
+}
+
+#pagenamediv {
+	position: relative;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+	min-height: 100px;
+	max-height: 150px;
+}
+
+#pagename {
+	color: white;
+	text-align: center;
+}
+
+.outer-margin {
+	padding: 0px;
+}
+
+.navbar {
+	width: 100%;
+	min-height: 50px;
+	background-color: #2B3743;
+	padding: 0px;
+}
+
+.navbar a {
+	float: left;
+	display: block;
+	font-family: 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+	color: #ffff;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* Active page is white and change inactive link color to white on hover */
+.navbar a.active, .navbar a:hover, .dropdown-content a:hover {
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.navbar .icon {
+	display: none;
+  }
+
+.section-style-1col {
+	margin: auto;
+	text-align: center;
+}
+
+.section-style-2col {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.pics {
+	width: 100%;
+}
+
+.portrait {
+	width: 100%;
+	max-width: 300px;
+}
+
+.footer {
+	color: white;
+    	font-weight: bold;
+	background-color: #2B3743;
+	height: 40px;
+	width: 100%;
+	text-align: center;
+}
+
+.footer p {
+	margin: 0px;
+}
+
+/* Taken from https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+Styles for small devices (phones and narrow tablets)
+All additional styles and the additional media queries are our own creation. */
+@media only screen and (min-width: 768px) {
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+	.section-style-1col {
+		margin-left: 16.67%;
+		margin-right: 16.67%;
+		text-align: center;
+	}
+	#logo {
+		padding: 0px;
+		margin: 0px;
+	}
+	#pagename {
+		text-align: left;
+		padding-left: 50px;
+		margin: 0;
+		left: 0%;
+		position: absolute;
+		top: 50%;
+		transform: translate(0%, -50%);
+	}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- The meta tag comes from https://www.w3schools.com/css/css_rwd_viewport.asp -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cornucopia GIS - Efforts & Challenges</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+	<section class="col-12" id="pagetop">
+		<div class="col-1">
+			<img src="photos/cornucopia-demo.JPG" alt="Company Logo" id="logo">
+		</div>
+		<div class="col-11" id="pagenamediv">
+			<h1 id="pagename">Efforts & Challenges</h1>
+		</div>
+	</section>
+    <header class="col-12 outer-margin">
+	<div class="navbar col-12">
+	    <a class="col-3" href="index.html">HOME</a>
+			<a class="col-3" href="about.html">ABOUT US</a>
+	    <a class="col-3" href="efforts.html">EFFORTS & CHALLENGES</a>
+			<a class="col-3" href="solutions.html">SOLUTIONS</a>         
+	</div>
+	</header>
+	<section class="col-12">
+	<div class="col-8 section-style-1col">
+		<h2>Our Journey</h2>
+	</div>
+    </section>
+    <section class="col-12 section-style-2col">
+	<div class="col-6">
+	    	<h3 class="top-align">Part 1: Getting started with Dashboards</h3>
+	    	<p>We rapidly established that we wanted to use ArcGIS Online as our platform of choice, and after consideration of our project's requirement to show not only a map but contextual data as well, settled on ArcGIS Dashboards as our preferred solution.</p>
+	   	<p>Our vision involved being able to change active map layers and widget content dynamically based on the selection of a theme, but it turned out that Dashboards did not provide this ability. Widget interactions with maps are largely limited to filtering features in a layer, or (in the case of a list) highlighting specific items. Being unable to dynamically change the layer that a widget references also meant we would be unable to have more than one data theme displayed at a time in a single dashboard.</p>
+	        <p>An additional challenge with dashboards was manipulating fields displayed in pop-up attribute windows which appeared from the selection of map features. For example, fields irrelevant to the subject matter would pop-up when selecting a feature of interest. We wished to modify the pop-up windows so that they may offer increased clarity for end users. Accordingly, we sought to modify this feature. A specific example task involved modifying the existing “Shape_Area” field name to a clearer name such as “Square_Km” so that the attribute is more easily understood in that users may gauge the size of different parks in Toronto.</p>
+		<p>Realizing that the fields rendered within the ArcGIS Dashboard environment mirror what fields are rendered when working with the same data in the ArcGIS Pro environment, we worked to hide undesired fields in ArcGIS Pro prior to uploading the data to ArcGIS Online and subsequently to the ArcGIS Dashboard environment to test the results and monitor any possible changes to what fields were displayed in the pop-up windows. Though time-consuming, this method was successful for us. It allowed for very few fields that were most pertinent to the subject matter at hand (such as the size of a park) to be displayed in the pop-up attribute windows that would appear when features were selected in ArcGIS Online. Though this method was successful, curiosity lingered as to whether potential workarounds existed to speed up this process.</p>
+
+	</div>
+	<div class="col-6">
+	    <img src="photos/dashboard-logo.jpg" alt="ArcGIS Dashboards" class = "pics">
+		<p><i>Image Credit: Spatial Media LLC</i></p>
+		<!-- Image Credit: https://gisuser.com/wp-content/uploads/2018/02/2018-02-07-11_03_14-Operations-Dashboard-for-ArcGIS-_-Real-Time-Data-Visualization-Analytics.jpg -->
+	 </div>
+	<div class="col-6">
+	    <img src="photos/pop-up-1.JPG" alt="ArcGIS Dashboards" class = "pics">
+		<p>Pop-up attribute window for a city park with a reduction in the number of fields names rendered, in addition to a name modification: “Square_Km”</p>
+	 </div>
+    </section>
+    <section class="col-12 section-style-2col">
+	<div class="col-6">
+	    <h3 class="top-align">Part 2: Grouping multiple dashboards</h3>
+	    <p>After realizing that we would need to make separate dashboards for our education them & activity theme, we investigated ways to group those dashboards together. We started by focusing primarily on two options: ArcGIS Hub and Story Map Collections (the new version of Story Map Series).</p>
+	    <i>Limitations of dashboards:</i>
+		<p>- The inability to re-order map layers in dashboards: if the map contains layers that cannot be visualized at the same time (i.e., polygons that block each other) then that layer must be saved as the top layer on the map viewer. A work-a-round would be to turn off some layers in dashboard to see the underneath layers.</p>
+                <p>- The layers themselves do not change as you zoom in and out of the map (though an indicator may be targeted to change as the map extent changes)</p>
+		<p>We then briefly explored the functionality of ArcGIS Hub as a means of consolidating and presenting our work and findings.</p>
+		<p><i>Why we liked ArcGIS Hub:</i> 
+		<p>- Can bring in all the apps and maps in one space</p>
+		<p><i>Disadvantages of ArcGIS Hub:</i> 
+		<p>- Not user-friendly to people outside of the GIS industry - therefore, we did not proceed with this space. As an alternative, Story Maps were pursued for showcasing our work. We realized that users may find it challenging to explore dashboards in this space. As an alternative, we sought out Story Maps to provide an improved user experience and to tell our story better.</p>
+	 </div>
+	<div class="col-6">
+	    <img src="photos/hub-1.JPG" alt="ArcGIS Hub" class = "pics">
+		<p>Our dashboards as they appeared in ArcGIS Hub.</p>
+	</div>    
+    </section> 
+    <section class="col-12 section-style-2col">
+	<div class="col-6">
+	    <h3 class="top-align">Interlude: Nested Dashboards</h3>
+	    <p>While investigating those previous solutions, we also became aware of a third potential option which seemed highly promising thanks to the Esri Developer Conference, which had a presentation on nested dashboards. Nested dashboards can group multiple dashboards into a single master dashboard using embed widgets, and selections made in the master dashboard can be used to filter widgets in the child dashboards using URL parameters.</p>
+	    <p>However, consultation with our advisor helped us realize that the Dashboards selection tool was inherently user-unfriendly, and rather than aim to populate widgets based on a single selection, we should aim to avoid selection altogether. So, we once again focused our efforts on ArcGIS Hub and Story Map Collections.</p>
+	</div>
+	<div class="col-6">
+	    <img src="photos/NestedDash1.JPG" alt="Nested Dashboard" class="pics">
+	    <img src="photos/NestedDash2.JPG" alt="Nested Dashboard" class="pics">
+		<p>Nested dashboards; one toggled to the dashboard concerning education (upper image) and one toggled to the dashboard concerning activities for children (lower image).
+	</div>
+    </section>    	
+	
+<footer class="col-12 footer">
+    <div>
+    <p class="footer-text">Copyright ©2021 Cornucopia GIS, Fleming College.</p>
+    </div>
+</footer>
+</body>
+</html>

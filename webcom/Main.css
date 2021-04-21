@@ -15,7 +15,13 @@ a {color: black;}
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+ 
 }
+h2 {
+	{
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+  }
 /* Nav Bar*/
 ul {
     list-style-type: none;
